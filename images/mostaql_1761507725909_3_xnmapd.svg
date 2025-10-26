@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <circle cx="100" cy="100" r="150" fill="white" opacity="0.05"/>
+  <circle cx="1100" cy="100" r="100" fill="white" opacity="0.05"/>
+  <circle cx="200" cy="500" r="120" fill="white" opacity="0.05"/>
+  
+  <rect x="60" y="90" width="1080" height="480" rx="30" fill="white" opacity="0.98"/>
+  
+  <g transform="translate(100, 60)">
+    <rect x="0" y="0" width="180" height="50" rx="25" fill="url(#greenGrad)"/>
+    <text x="90" y="32" font-family="Tahoma, Arial" font-size="20" font-weight="bold" fill="white" text-anchor="middle">🔥 مشروع جديد</text>
+  </g>
+  
+  <text x="1020" y="160" font-family="Tahoma, Arial" font-size="34" font-weight="bold" fill="#2d3748" text-anchor="end">تعديل layout لمشروع بأسرع وقت ممكن</text>
+  
+  
+  <g transform="translate(100, 230)">
+    <rect x="0" y="0" width="460" height="85" rx="20" fill="url(#purpleGrad)"/>
+    <text x="20" y="45" font-family="Arial" font-size="36">💰</text>
+    <text x="420" y="35" font-family="Tahoma, Arial" font-size="15" fill="white" text-anchor="end">الميزانية</text>
+    <text x="420" y="60" font-family="Tahoma, Arial" font-size="22" font-weight="bold" fill="white" text-anchor="end">$25.00 - $50.00</text>
+  </g>
+  
+  <g transform="translate(580, 230)">
+    <rect x="0" y="0" width="460" height="85" rx="20" fill="url(#blueGrad)"/>
+    <text x="20" y="45" font-family="Arial" font-size="36">📊</text>
+    <text x="420" y="35" font-family="Tahoma, Arial" font-size="15" fill="white" text-anchor="end">عدد العروض</text>
+    <text x="420" y="60" font-family="Tahoma, Arial" font-size="22" font-weight="bold" fill="white" text-anchor="end">0 عرض</text>
+  </g>
+  
+  <g transform="translate(100, 330)">
+    <rect x="0" y="0" width="460" height="85" rx="20" fill="url(#pinkGrad)"/>
+    <text x="20" y="45" font-family="Arial" font-size="36">📂</text>
+    <text x="420" y="35" font-family="Tahoma, Arial" font-size="15" fill="white" text-anchor="end">التصنيف</text>
+    <text x="420" y="60" font-family="Tahoma, Arial" font-size="20" font-weight="bold" fill="white" text-anchor="end">كتابة، تحرير، ترجمة ولغات</text>
+  </g>
+  
+  <g transform="translate(580, 330)">
+    <rect x="0" y="0" width="460" height="85" rx="20" fill="url(#greenGrad)"/>
+    <text x="20" y="45" font-family="Arial" font-size="36">⏱️</text>
+    <text x="420" y="35" font-family="Tahoma, Arial" font-size="15" fill="white" text-anchor="end">مدة التنفيذ</text>
+    <text x="420" y="60" font-family="Tahoma, Arial" font-size="22" font-weight="bold" fill="white" text-anchor="end">غير محدد</text>
+  </g>
+  
+  <text x="1020" y="460" font-family="Tahoma, Arial" font-size="20" font-weight="bold" fill="#4a5568" text-anchor="end">💡 الكتابة على الإنترنت • الكتابة الإبداعية • التدقيق اللغوي</text>
+  
+  <line x1="100" y1="490" x2="1040" y2="490" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <g transform="translate(100, 510)">
+    <rect x="0" y="0" width="50" height="50" rx="10" fill="url(#purpleGrad)"/>
+    <text x="25" y="35" font-family="Arial" font-size="28" font-weight="bold" fill="white" text-anchor="middle">م</text>
+    <text x="65" y="40" font-family="Tahoma, Arial" font-size="22" font-weight="bold" fill="#4a5568">منصة مستقل</text>
+  </g>
+  
+  <text x="1040" y="545" font-family="Tahoma, Arial" font-size="16" fill="#718096" text-anchor="end">jobayti.live | فرص العمل الحر</text>
+</svg>
