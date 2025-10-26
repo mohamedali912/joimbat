@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#43e97b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#38f9d7;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Shadows -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
+      <feOffset dx="0" dy="5" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.2"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="smallShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.15"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  
+  <!-- Background Pattern -->
+  <circle cx="100" cy="100" r="150" fill="white" opacity="0.05"/>
+  <circle cx="1100" cy="100" r="100" fill="white" opacity="0.05"/>
+  <circle cx="200" cy="500" r="120" fill="white" opacity="0.05"/>
+  <circle cx="1000" cy="530" r="180" fill="white" opacity="0.03"/>
+  <circle cx="600" cy="300" r="200" fill="white" opacity="0.02"/>
+  
+  <!-- Main Card -->
+  <rect x="60" y="90" width="1080" height="480" rx="30" fill="white" opacity="0.98" filter="url(#shadow)"/>
+  
+  <!-- Status Badge -->
+  <g transform="translate(100, 60) rotate(-5)">
+    <rect x="0" y="0" width="180" height="50" rx="25" fill="url(#greenGrad)" filter="url(#shadow)"/>
+    <text x="90" y="32" font-family="Tahoma, Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+      🔥 مشروع جديد
+    </text>
+  </g>
+  
+  <!-- Title Section -->
+  <text x="1020" y="160" font-family="Tahoma, Arial, sans-serif" font-size="34" font-weight="bold" fill="#2d3748" text-anchor="end">
+    رفع التطبيق إلى أب ستور أبل التطبيق جاهز وشغال في 
+  </text>
+  <text x="1020" y="195" font-family="Tahoma, Arial, sans-serif" font-size="30" font-weight="bold" fill="#2d3748" text-anchor="end" opacity="0.9">
+    المحاكي في الجهاز الماك
+  </text>
+  
+  <!-- Info Grid -->
+  <!-- Row 1 -->
+  <g transform="translate(100, 230)">
+    <rect x="0" y="0" width="460" height="85" rx="20" fill="url(#purpleGrad)" filter="url(#smallShadow)"/>
+    <text x="20" y="45" font-family="Arial" font-size="36">💰</text>
+    <text x="420" y="35" font-family="Tahoma, Arial" font-size="15" fill="white" text-anchor="end" opacity="0.9">الميزانية</text>
+    <text x="420" y="60" font-family="Tahoma, Arial" font-size="22" font-weight="bold" fill="white" text-anchor="end">$25.00 - $50.00</text>
+  </g>
+  
+  <g transform="translate(580, 230)">
+    <rect x="0" y="0" width="460" height="85" rx="20" fill="url(#blueGrad)" filter="url(#smallShadow)"/>
+    <text x="20" y="45" font-family="Arial" font-size="36">📊</text>
+    <text x="420" y="35" font-family="Tahoma, Arial" font-size="15" fill="white" text-anchor="end" opacity="0.9">عدد العروض</text>
+    <text x="420" y="60" font-family="Tahoma, Arial" font-size="22" font-weight="bold" fill="white" text-anchor="end">0 عرض</text>
+  </g>
+  
+  <!-- Row 2 -->
+  <g transform="translate(100, 330)">
+    <rect x="0" y="0" width="460" height="85" rx="20" fill="url(#pinkGrad)" filter="url(#smallShadow)"/>
+    <text x="20" y="45" font-family="Arial" font-size="36">📂</text>
+    <text x="420" y="35" font-family="Tahoma, Arial" font-size="15" fill="white" text-anchor="end" opacity="0.9">التصنيف</text>
+    <text x="420" y="60" font-family="Tahoma, Arial" font-size="20" font-weight="bold" fill="white" text-anchor="end">برمجة، تطوير المواقع والتطبيقات</text>
+  </g>
+  
+  <g transform="translate(580, 330)">
+    <rect x="0" y="0" width="460" height="85" rx="20" fill="url(#greenGrad)" filter="url(#smallShadow)"/>
+    <text x="20" y="45" font-family="Arial" font-size="36">⏱️</text>
+    <text x="420" y="35" font-family="Tahoma, Arial" font-size="15" fill="white" text-anchor="end" opacity="0.9">مدة التنفيذ</text>
+    <text x="420" y="60" font-family="Tahoma, Arial" font-size="22" font-weight="bold" fill="white" text-anchor="end">غير محدد</text>
+  </g>
+  
+  <!-- Skills Section -->
+  
+  <text x="1020" y="460" font-family="Tahoma, Arial" font-size="20" font-weight="bold" fill="#4a5568" text-anchor="end">
+    💡 المهارات المطلوبة
+  </text>
+  
+  <g transform="translate(100, 475)">
+    
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="140" height="38" rx="19" fill="#e0e7ff" filter="url(#smallShadow)"/>
+        <text x="70" y="25" font-family="Tahoma, Arial" font-size="15" font-weight="600" fill="#5a67d8" text-anchor="middle">
+          برمجة
+        </text>
+      </g>
+      <g transform="translate(150, 0)">
+        <rect x="0" y="0" width="140" height="38" rx="19" fill="#e0e7ff" filter="url(#smallShadow)"/>
+        <text x="70" y="25" font-family="Tahoma, Arial" font-size="15" font-weight="600" fill="#5a67d8" text-anchor="middle">
+          تطوير البرمجيات
+        </text>
+      </g>
+      <g transform="translate(300, 0)">
+        <rect x="0" y="0" width="140" height="38" rx="19" fill="#e0e7ff" filter="url(#smallShadow)"/>
+        <text x="70" y="25" font-family="Tahoma, Arial" font-size="15" font-weight="600" fill="#5a67d8" text-anchor="middle">
+          برمجة مواقع
+        </text>
+      </g>
+      <g transform="translate(450, 0)">
+        <rect x="0" y="0" width="140" height="38" rx="19" fill="#e0e7ff" filter="url(#smallShadow)"/>
+        <text x="70" y="25" font-family="Tahoma, Arial" font-size="15" font-weight="600" fill="#5a67d8" text-anchor="middle">
+          برمجة قواعد البيانات
+        </text>
+      </g>
+      <g transform="translate(600, 0)">
+        <rect x="0" y="0" width="140" height="38" rx="19" fill="#e0e7ff" filter="url(#smallShadow)"/>
+        <text x="70" y="25" font-family="Tahoma, Arial" font-size="15" font-weight="600" fill="#5a67d8" text-anchor="middle">
+          برمجة أندرويد
+        </text>
+      </g>
+  </g>
+  
+  
+  <!-- Footer -->
+  <line x1="100" y1="530" x2="1040" y2="530" stroke="#e2e8f0" stroke-width="2" opacity="0.5"/>
+  
+  <g transform="translate(100, 540)">
+    <rect x="0" y="0" width="50" height="50" rx="10" fill="url(#purpleGrad)"/>
+    <text x="25" y="35" font-family="Arial" font-size="28" font-weight="bold" fill="white" text-anchor="middle">م</text>
+    <text x="65" y="35" font-family="Tahoma, Arial" font-size="22" font-weight="bold" fill="#4a5568">منصة مستقل</text>
+  </g>
+  
+  <text x="1040" y="575" font-family="Tahoma, Arial" font-size="16" fill="#718096" text-anchor="end">
+    📅 26/10/2025 | تم الإنشاء بواسطة نظام آلي
+  </text>
+</svg>
