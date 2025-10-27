@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" dir="rtl" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- خلفية متدرجة محسّنة -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a3d7c" stop-opacity="1" />
+      <stop offset="50%" stop-color="#2e5cb8" stop-opacity="1" />
+      <stop offset="100%" stop-color="#4a7de8" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- تدرج ذهبي محسّن -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24" stop-opacity="1" />
+      <stop offset="50%" stop-color="#fcd34d" stop-opacity="1" />
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="1" />
+    </linearGradient>
+
+    <!-- تدرج للبطاقة -->
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.05" />
+    </linearGradient>
+
+    <!-- ظل ناعم محسّن -->
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10"/>
+      <feOffset dx="0" dy="8" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.25"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- توهج للنصوص -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="0" dy="2" result="oBlur"/>
+      <feFlood flood-color="#ffffff" flood-opacity="0.3"/>
+      <feComposite in2="oBlur" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- نقاط خلفية -->
+    <pattern id="dots" x="0" y="0" width="50" height="50" patternUnits="userSpaceOnUse">
+      <circle cx="25" cy="25" r="2.5" fill="#ffffff" opacity="0.08"/>
+    </pattern>
+
+    <!-- شبكة خلفية -->
+    <pattern id="grid" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#ffffff" stroke-width="0.6" opacity="0.05"/>
+    </pattern>
+
+    <style type="text/css"><![CDATA[
+      text { font-family: Tahoma, 'Tahoma', 'Arial', sans-serif; fill: #ffffff; }
+      .title { font-weight: 700; }
+      .subtitle { font-weight: 600; fill: rgba(255,255,255,0.95); }
+      .muted { fill: rgba(255,255,255,0.88); font-weight: 600; }
+      .platform-name { font-weight: 700; fill: #ffffff; }
+    ]]></style>
+  </defs>
+
+  <!-- الخلفية الأساسية -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  <rect width="1200" height="630" fill="url(#dots)" />
+  <rect width="1200" height="630" fill="url(#grid)" />
+
+  <!-- دوائر زخرفية محسّنة -->
+  <circle cx="120" cy="100" r="120" fill="#ffffff" opacity="0.06"/>
+  <circle cx="1080" cy="150" r="100" fill="#ffffff" opacity="0.05"/>
+  <circle cx="180" cy="490" r="140" fill="#ffffff" opacity="0.04"/>
+  <circle cx="1020" cy="510" r="110" fill="#ffffff" opacity="0.06"/>
+
+  <!-- العنوان الرئيسي (وسط الصورة، RTL) -->
+  <text x="600" y="120" class="title" font-size="50" text-anchor="middle" direction="rtl" dominant-baseline="middle" filter="url(#glow)">محاسب ومدقق مالي محترف للعمل على تدقيق</text>
+  <text x="600" y="182" class="title" font-size="50" text-anchor="middle" direction="rtl" dominant-baseline="middle" filter="url(#glow)">حسابات شركتنا</text>
+
+  <!-- خط ذهبي تحت العنوان -->
+  <rect x="360" y="254" width="480" height="7" rx="3.5" fill="url(#goldGradient)" filter="url(#softShadow)" opacity="0.95"/>
+
+  <!-- بطاقة المنصة (محسّنة ومعدّلة) -->
+  <g transform="translate(740, 304)">
+    <!-- خلفية البطاقة -->
+    <rect x="0" y="0" width="400" height="120" rx="16" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.15)" stroke-width="2" filter="url(#softShadow)"/>
+    
+    <!-- أيقونة المنصة (مربع بدلاً من دائرة) -->
+    <g transform="translate(280, 25)">
+      <rect x="0" y="0" width="70" height="70" rx="12" fill="url(#goldGradient)" filter="url(#softShadow)"/>
+      <!-- رمز نجمة داخل المربع -->
+      <text x="35" y="50" font-size="32" font-weight="700" text-anchor="middle" fill="#1a3d7c">★</text>
+    </g>
+    
+    <!-- نصوص المنصة -->
+    <text x="250" y="45" class="muted" font-size="20" text-anchor="end" direction="rtl">المنصة</text>
+    <text x="250" y="85" class="platform-name" font-size="28" text-anchor="end" direction="rtl">مستقل</text>
+  </g>
+
+  <!-- بادج الحالة (فرصة جديدة) - محسّن -->
+  <g transform="translate(470, 464)">
+    <rect x="0" y="0" width="260" height="64" rx="32" fill="#10b981" filter="url(#softShadow)"/>
+    <!-- توهج داخلي -->
+    <rect x="4" y="4" width="252" height="56" rx="28" fill="rgba(255,255,255,0.1)"/>
+    <text x="130" y="40" font-family="Tahoma, Arial, sans-serif" font-size="24" font-weight="700" text-anchor="middle">🔥 فرصة جديدة</text>
+  </g>
+
+  <!-- بطاقة الرابط (أسفل اليسار) - محسّنة -->
+  <g transform="translate(50, 520)">
+    <rect x="0" y="0" width="280" height="64" rx="32" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="40" y="40" font-size="20" font-weight="700" fill="#ffffff" text-anchor="start">jobayti.live</text>
+    <!-- أيقونة رابط -->
+    <g transform="translate(220, 16)">
+      <circle cx="16" cy="16" r="16" fill="#fbbf24" />
+      <text x="16" y="22" font-size="14" font-weight="700" text-anchor="middle" fill="#1a3d7c">🔗</text>
+    </g>
+  </g>
+
+  <!-- شعار Jobayti (أسفل اليمين) - محسّن -->
+  <g transform="translate(1060, 500)">
+    <rect x="0" y="0" width="90" height="90" rx="16" fill="url(#cardGradient)" stroke="rgba(255,255,255,0.12)" stroke-width="2" filter="url(#softShadow)"/>
+    <text x="45" y="40" font-size="18" font-weight="700" text-anchor="middle">Job</text>
+    <text x="45" y="62" font-size="18" font-weight="700" text-anchor="middle" fill="#fbbf24">ayti</text>
+  </g>
+
+  <!-- زخارف الزوايا الذهبية - محسّنة -->
+  <g opacity="0.4">
+    <path d="M 80 80 L 80 120 L 120 80 Z" fill="url(#goldGradient)"/>
+    <path d="M 1120 80 L 1120 120 L 1080 80 Z" fill="url(#goldGradient)"/>
+    <path d="M 80 550 L 80 510 L 120 550 Z" fill="url(#goldGradient)"/>
+    <path d="M 1120 550 L 1120 510 L 1080 550 Z" fill="url(#goldGradient)"/>
+  </g>
+
+  <!-- نقاط زخرفية في الأعلى -->
+  <g transform="translate(600, 40)">
+    <circle cx="0" cy="0" r="4" fill="#fbbf24" opacity="0.7"/>
+    <circle cx="-40" cy="0" r="3" fill="#ffffff" opacity="0.5"/>
+    <circle cx="40" cy="0" r="3" fill="#ffffff" opacity="0.5"/>
+    <circle cx="-80" cy="0" r="2" fill="#fbbf24" opacity="0.4"/>
+    <circle cx="80" cy="0" r="2" fill="#fbbf24" opacity="0.4"/>
+  </g>
+
+  <!-- خطوط زخرفية جانبية -->
+  <line x1="40" y1="215" x2="40" y2="415" stroke="#fbbf24" stroke-width="3" opacity="0.15" stroke-linecap="round"/>
+  <line x1="1160" y1="215" x2="1160" y2="415" stroke="#fbbf24" stroke-width="3" opacity="0.15" stroke-linecap="round"/>
+</svg>
