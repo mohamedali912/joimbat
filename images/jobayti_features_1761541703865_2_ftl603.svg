@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#2a5298;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7e8ba3;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffd700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffed4e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffa500;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="platformGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.15" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.05" />
+    </linearGradient>
+    
+    <!-- Shadow filters -->
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="6"/>
+      <feOffset dx="0" dy="4" result="offsetblur"/>
+      <feFlood flood-color="#000000" flood-opacity="0.2"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="glowEffect" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="0" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#ffffff" flood-opacity="0.2"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative circles -->
+  <circle cx="150" cy="120" r="80" fill="white" opacity="0.06"/>
+  <circle cx="1050" cy="180" r="60" fill="white" opacity="0.05"/>
+  <circle cx="200" cy="480" r="100" fill="white" opacity="0.04"/>
+  
+  <!-- Title lines with Tahoma font -->
+  <text x="600" y="160" font-family="Tahoma, Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle" filter="url(#glowEffect)">
+    مقال تثقيفيتسويقي عن حلوى شوكيلاتة
+  </text><text x="600" y="218" font-family="Tahoma, Arial, sans-serif" font-size="48" font-weight="bold" fill="white" text-anchor="middle" filter="url(#glowEffect)">
+    لمدونة بمتجر إلكتروني
+  </text>
+  
+  <!-- Gold underline -->
+  <rect x="400" y="286" width="400" height="4" rx="2" fill="url(#goldGradient)" filter="url(#softShadow)"/>
+  
+  <!-- Platform section -->
+  <g transform="translate(450, 306)">
+    <rect x="0" y="0" width="300" height="70" rx="15" fill="url(#platformGradient)" stroke="rgba(255,255,255,0.3)" stroke-width="2" filter="url(#softShadow)"/>
+    
+    <!-- Platform icon -->
+    <g transform="translate(20, 20)">
+      <circle cx="15" cy="15" r="15" fill="url(#goldGradient)" filter="url(#softShadow)"/>
+      <text x="15" y="22" font-family="Tahoma, Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">م</text>
+    </g>
+    
+    <!-- Platform text -->
+    <text x="150" y="30" font-family="Tahoma, Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.9)" text-anchor="middle">المنصة</text>
+    <text x="150" y="50" font-family="Tahoma, Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">منصة مستقل</text>
+  </g>
+  
+  <!-- Status badge -->
+  <g transform="translate(500, 396)">
+    <rect x="0" y="0" width="200" height="50" rx="25" fill="#48bb78" filter="url(#softShadow)"/>
+    <text x="100" y="33" font-family="Tahoma, Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">
+      🔥 متاح الآن
+    </text>
+  </g>
+  
+  <!-- Features section -->
+  <g transform="translate(220, 466)">
+    <rect x="0" y="0" width="760" height="100" rx="15" fill="rgba(255,255,255,0.1)" stroke="rgba(255,255,255,0.2)" stroke-width="1" filter="url(#softShadow)"/>
+    
+    <!-- Section title -->
+    <text x="380" y="25" font-family="Tahoma, Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">مميزات Jobayti</text>
+    
+    <!-- Feature 1: 24/7 -->
+    <g transform="translate(40, 40)">
+      <circle cx="20" cy="20" r="20" fill="#4299e1" opacity="0.8"/>
+      <text x="20" y="26" font-family="Tahoma, Arial, sans-serif" font-size="16" font-weight="bold" fill="white" text-anchor="middle">24/7</text>
+      <text x="20" y="65" font-family="Tahoma, Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">وظائف محدثة</text>
+    </g>
+    
+    <!-- Feature 2: Search -->
+    <g transform="translate(250, 40)">
+      <circle cx="20" cy="20" r="20" fill="#48bb78" opacity="0.8"/>
+      <!-- Search icon -->
+      <g transform="translate(8, 8)">
+        <circle cx="12" cy="12" r="10" fill="none" stroke="white" stroke-width="2"/>
+        <path d="M 20 20 L 28 28" stroke="white" stroke-width="2" stroke-linecap="round"/>
+      </g>
+      <text x="20" y="65" font-family="Tahoma, Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">بحث سهل</text>
+    </g>
+    
+    <!-- Feature 3: Personalized -->
+    <g transform="translate(460, 40)">
+      <circle cx="20" cy="20" r="20" fill="#ed8936" opacity="0.8"/>
+      <!-- User icon -->
+      <g transform="translate(8, 8)">
+        <circle cx="12" cy="10" r="6" fill="white"/>
+        <path d="M 2 30 Q 12 24 22 30" fill="white"/>
+      </g>
+      <text x="20" y="65" font-family="Tahoma, Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">حساب شخصي</text>
+    </g>
+    
+    <!-- Feature 4: Notifications -->
+    <g transform="translate(670, 40)">
+      <circle cx="20" cy="20" r="20" fill="#9f7aea" opacity="0.8"/>
+      <!-- Bell icon -->
+      <g transform="translate(8, 6)">
+        <path d="M 12 4 C 12 4 12 2 12 2 C 12 2 12 0 12 0 C 12 0 12 2 12 2 C 12 2 12 4 12 4 C 8 4 4 8 4 12 L 4 18 L 2 20 L 22 20 L 20 18 L 20 12 C 20 8 16 4 12 4 Z" fill="white"/>
+        <circle cx="12" cy="22" r="2" fill="white"/>
+      </g>
+      <text x="20" y="65" font-family="Tahoma, Arial, sans-serif" font-size="14" fill="white" text-anchor="middle">تنبيهات فورية</text>
+    </g>
+  </g>
+  
+  <!-- Call to action -->
+  <g transform="translate(450, 586)">
+    <rect x="0" y="0" width="300" height="50" rx="25" fill="url(#goldGradient)" filter="url(#softShadow)"/>
+    <text x="150" y="33" font-family="Tahoma, Arial, sans-serif" font-size="18" font-weight="bold" fill="white" text-anchor="middle">jobayti.live</text>
+  </g>
+  
+  <!-- Bottom decorative elements -->
+  <g transform="translate(100, 510)">
+    <circle cx="0" cy="0" r="4" fill="url(#goldGradient)"/>
+    <circle cx="20" cy="0" r="4" fill="url(#goldGradient)" opacity="0.7"/>
+    <circle cx="40" cy="0" r="4" fill="url(#goldGradient)" opacity="0.4"/>
+    <text x="70" y="5" font-family="Tahoma, Arial, sans-serif" font-size="16" font-weight="bold" fill="white">Jobayti</text>
+  </g>
+  
+  <!-- Right side with link icon -->
+  <g transform="translate(1000, 510)">
+    <g transform="translate(0, -15)">
+      <circle cx="0" cy="0" r="15" fill="#4299e1" filter="url(#softShadow)"/>
+      <!-- Link chain icon -->
+      <g transform="translate(-8, -8)">
+        <path d="M 3 8 L 8 3 L 10 5 L 5 10 L 3 8" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M 6 11 L 11 6 L 13 8 L 8 13 L 6 11" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+    <text x="30" y="5" font-family="Tahoma, Arial, sans-serif" font-size="16" font-weight="bold" fill="white">اكتشف المزيد</text>
+  </g>
+  
+  <!-- Corner decorations -->
+  <path d="M 100 100 L 100 120 L 120 100" fill="url(#goldGradient)" opacity="0.3"/>
+  <path d="M 1100 100 L 1100 120 L 1080 100" fill="url(#goldGradient)" opacity="0.3"/>
+  <path d="M 100 530 L 100 510 L 120 530" fill="url(#goldGradient)" opacity="0.3"/>
+  <path d="M 1100 530 L 1100 510 L 1070 530" fill="url(#goldGradient)" opacity="0.3"/>
+</svg>
